@@ -1133,6 +1133,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   catSFX: {fileID: 8300000, guid: 386254b95f4e36f4790b93e1329300fd, type: 3}
   teleportSFX: {fileID: 8300000, guid: f8ace5abfbd705f4ba8954d09e1e25da, type: 3}
+  zombieSFX: {fileID: 8300000, guid: 833d0646c78f58d42986938f5cbf6459, type: 3}
+  jumpSFX: {fileID: 8300000, guid: 73f475b8568dca640a37dfd93c958762, type: 3}
 --- !u!136 &70061340
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8777,7 +8779,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961216802}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 616.74243, y: -280.46423, z: -1113.5994}
+  m_LocalPosition: {x: 689.8155, y: -286.3554, z: -1192.0013}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
