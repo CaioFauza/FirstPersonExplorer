@@ -1,6 +1,9 @@
 # FirstPersonExplorer
 Insper 2021.1 - Jogos Digitais | Unity 3D game development
 
+GDD: [click here](https://docs.google.com/document/d/1VT09ZiEbI3BHzECxoq5AAcYHzp2S3v510WdRwmQcJUQ/edit) 
+
+
 Authors: Caio Fauza and Pedro Paulo Telho
 
 Music, sound effects and models used:
