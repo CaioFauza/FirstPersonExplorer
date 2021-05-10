@@ -96,7 +96,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
     void LateUpdate()
     {
         RaycastHit hit;
