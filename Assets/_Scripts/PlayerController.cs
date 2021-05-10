@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     CharacterController characterController;
     Text catText, catFoundText, buttonText, startText;
     bool catFound = false, catStatusMessage = false, started = false;
-    public AudioClip catSFX, teleportSFX;
+    public AudioClip catSFX, teleportSFX, zombieSFX, jumpSFX;
     private CameraShake cameraShake;
 
     void Start()
@@ -60,7 +60,11 @@ public class PlayerController : MonoBehaviour
         cameraRotation += mouse_dY * -1;
         Mathf.Clamp(cameraRotation, -75.0f, 75.0f);
 
-        if (Input.GetButtonDown("Jump") && characterController.isGrounded) _jump = 2.5f;
+        if (Input.GetButtonDown("Jump") && characterController.isGrounded)
+        {
+            AudioManager.PlaySFX(jumpSFX);
+            _jump = 2.5f;
+        }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && (x != 0f || z != 0f))
         {
@@ -115,6 +119,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.collider.tag == "Enemy")
         {
+            AudioManager.PlaySFX(zombieSFX);
             gm.lifes--;
             Reset();
             gm.ChangeState(GameManager.GameState.END);
