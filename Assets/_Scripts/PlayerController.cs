@@ -165,6 +165,8 @@ public class PlayerController : MonoBehaviour
         catStatusMessage = false;
         catFoundText.gameObject.SetActive(catStatusMessage);
         catFound = false;
+        catText.gameObject.SetActive(catFound);
+        cameraShake.Shake(false);
         buttonText.gameObject.SetActive(false);
         started = false;
         transform.position = new Vector3(-15.48f, 23.64f, -12.81f);
